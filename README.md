@@ -1,6 +1,6 @@
 # README
 
-Game of life implementation.
+[Game of life implementation](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 As a user I'll be giving inputs for game of life initial co-ordintates so that I can see its simulation inside a browser page.
 
