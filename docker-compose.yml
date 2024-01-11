@@ -7,25 +7,11 @@ services:
     #   - postgres_data:/var/lib/postgresql/data
     command: "postgres -c 'max_connections=500'"
     environment:
-      POSTGRES_DB: myappdb
-      POSTGRES_USER: my_user
-      POSTGRES_PASSWORD: ILoveDoingKnowBe4Training!
+      POSTGRES_DB: game_of_life_24_test
+      POSTGRES_USER: bit_fury
+      POSTGRES_PASSWORD: gameOfLifeAgain
     ports:
       - "5432:5432"
-#   rails_app:
-#     build: .
-#     command: "bundle exec rails s -p 3000 -b '0.0.0.0'"
-#     environment:
-#       DB_HOST: db
-#       DB_NAME: myappdb
-#       DB_USERNAME: my_user
-#       DB_PASSWORD: ILoveDoingKnowBe4Training!
-#     volumes:
-#       - .:/app:cached
-#     ports:
-#       - "3000:3000"
-#     depends_on:
-#       - db
 volumes:
   postgres_data: {}
 networks:
